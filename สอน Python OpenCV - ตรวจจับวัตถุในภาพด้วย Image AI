@@ -12,8 +12,8 @@ pip install h5py
 pip install keras
 ---------------------------------
 Step 2 Download : https://github.com/OlafenwaMoses/ImageAI
-https://www.youtube.com/redirect?v=7FyPNrBhUcQ&event=video_description&q=https%3A%2F%2Fgithub.com%2FOlafenwaMoses%2FImageAI%2Freleases%2Fdownload%2F1.0%2Fresnet50_coco_best_v2.0.1.h5&redir_token=QUFFLUhqbmw0S2xIZVI3cG8wVGxQcXNUcTJXRE9SWFVzQXxBQ3Jtc0ttS3ZCMTRfc3V6WmFCSm9yVE9CMmExRTZrS1hfeEM2d0FLM2FBRjkyRF9LajUzZFc2QjdXT0txNHJYVENUNE83WXY3QlJsMVEyZkFfWGJIcGl6U0J6UUNUZkl6QUJzTV9STEp6RlBJSlh6bjNqS09zQQ%3D%3D
-" resnet50_coco_best_v2.0.1.h5 "
+https://github.com/OlafenwaMoses/ImageAI/releases/download/1.0/resnet50_coco_best_v2.0.1.h5
+
 ---------------------------------
 Step 3 : 
 pip install https://github.com/OlafenwaMoses/Imag...
