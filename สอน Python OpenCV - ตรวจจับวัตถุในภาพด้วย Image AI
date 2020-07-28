@@ -1,0 +1,40 @@
+python -m pip install --upgrade pip
+----------------------------------
+Step 1 Install Module:
+---------------------------------
+pip install tensorflow
+pip install numpy
+pip install scipy
+pip install opencv-python
+pip install pillow
+pip install matplotlib
+pip install h5py
+pip install keras
+---------------------------------
+Step 2 Download : https://github.com/OlafenwaMoses/ImageAI
+https://www.youtube.com/redirect?v=7FyPNrBhUcQ&event=video_description&q=https%3A%2F%2Fgithub.com%2FOlafenwaMoses%2FImageAI%2Freleases%2Fdownload%2F1.0%2Fresnet50_coco_best_v2.0.1.h5&redir_token=QUFFLUhqbmw0S2xIZVI3cG8wVGxQcXNUcTJXRE9SWFVzQXxBQ3Jtc0ttS3ZCMTRfc3V6WmFCSm9yVE9CMmExRTZrS1hfeEM2d0FLM2FBRjkyRF9LajUzZFc2QjdXT0txNHJYVENUNE83WXY3QlJsMVEyZkFfWGJIcGl6U0J6UUNUZkl6QUJzTV9STEp6RlBJSlh6bjNqS09zQQ%3D%3D
+" resnet50_coco_best_v2.0.1.h5 "
+---------------------------------
+Step 3 : 
+pip install https://github.com/OlafenwaMoses/Imag...
+https://www.youtube.com/redirect?v=7FyPNrBhUcQ&event=video_description&q=https%3A%2F%2Fgithub.com%2FOlafenwaMoses%2FImageAI%2Freleases%2Fdownload%2F2.0.2%2Fimageai-2.0.2-py3-none-any.whl&redir_token=QUFFLUhqbjhfMkhvTDFZb3RyMS00aUdSZWZzcjZNU2hzQXxBQ3Jtc0trQTVPTFlFWFN0V1NNa0MwMG9IOGllYkpyWkM0dXRvQnJRRGo0VWlDTUw0MnR6ZHRRQXlJeFpmMTdqeWduSG5iUjFGT2FGQmtPYTdiMHBfY3I2ZDdzNU1tUU5sejk4Snc2czgxbFRaNFFwZzVXcEZRcw%3D%3D
+" imageai-2.0.2-py3-none-any.whl "
+---------------------------------
+Step 4 Paste Code :
+---------------------------------
+from imageai.Detection import ObjectDetection
+import os
+execution_path = os.getcwd()
+detector = ObjectDetection()
+detector.setModelTypeAsRetinaNet()
+detector.setModelPath( os.path.join(execution_path , "resnet50_coco_best_v2.0.1.h5"))
+detector.loadModel()
+detections = detector.detectObjectsFromImage(input_image=os.path.join(execution_path , "image.jpg"), output_image_path=os.path.join(execution_path , "imagenew.jpg"))
+
+for eachObject in detections:
+  print(eachObject["name"] , " : " , eachObject["percentage_probability"] )
+
+----------------------------------
+
+How to :
+https://arxiv.org/pdf/1708.02002.pdf
